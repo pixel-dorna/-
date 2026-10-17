@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>تایمر</title>
+</head>
+<body>
+
+    <h1 id="timer">10</h1>
+
+    <script>
+        let time = 10;
+
+        let countdown = setInterval(function () {
+            time--;
+
+            document.getElementById("timer").textContent = time;
+
+            if (time === 0) {
+                clearInterval(countdown);
+                alert("تموم شد!");
+            }
+        }, 1000);
+    </script>
+
+</body>
+</html>
