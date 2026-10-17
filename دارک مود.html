@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>Dark Mode</title>
+
+    <style>
+        body {
+            background: white;
+            color: black;
+            transition: 0.3s;
+        }
+
+        .dark {
+            background: #121212;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>سلام</h1>
+    <button onclick="changeMode()">تغییر حالت</button>
+
+    <script>
+        function changeMode() {
+            document.body.classList.toggle("dark");
+        }
+    </script>
+
+</body>
+</html>
