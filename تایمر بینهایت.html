@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>تایمر</title>
+</head>
+<body>
+
+    <h1 id="timer">0</h1>
+
+    <button onclick="stopTimer()">توقف</button>
+    <button onclick="startTimer()">ادامه</button>
+
+    <script>
+        let time = 0;
+        let timer = null;
+
+        function startTimer() {
+            if (timer !== null) return;
+
+            timer = setInterval(function () {
+                time++;
+                document.getElementById("timer").textContent = time;
+            }, 1000);
+        }
+
+        function stopTimer() {
+            clearInterval(timer);
+            timer = null;
+        }
+
+        startTimer();
+    </script>
+
+</body>
+</html>
