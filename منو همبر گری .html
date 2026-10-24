@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>منوی من</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: white;
+        }
+
+        .header {
+            background-color: gray;
+            color: white;
+            padding: 15px;
+        }
+
+        .menu-btn {
+            font-size: 25px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: white;
+        }
+
+        .menu {
+            display: none;
+            background-color: lightgray;
+            width: 200px;
+        }
+
+        .menu a {
+            display: block;
+            padding: 12px;
+            color: black;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <button class="menu-btn" onclick="showMenu()">☰</button>
+        سایت من
+    </div>
+
+    <div class="menu" id="menu">
+        <a href="#">خانه</a>
+        <a href="#">درباره ما</a>
+        <a href="#">تماس با ما</a>
+        <a href="#">تنظیمات</a>
+    </div>
+
+    <script>
+        function showMenu() {
+            var menu = document.getElementById("menu");
+
+            if (menu.style.display == "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>
