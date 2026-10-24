@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>منوی ساده</title>
+</head>
+<body style="text-align: center;">
+
+    <button onclick="menu()">منو</button>
+
+    <ul id="list" style="list-style-position: inside; padding: 0;">
+        <li>خانه</li>
+        <li>درباره ما</li>
+        <li>تماس با ما</li>
+        <li>تنظیمات</li>
+    </ul>
+
+    <script>
+        function menu() {
+            var x = document.getElementById("list");
+
+            if (x.style.display == "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
